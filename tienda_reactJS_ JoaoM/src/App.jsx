@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Header />
-      <ItemListContainer />
+      <ItemListContainer bienvenida={"Bienvenidos/as a Amaris"}/>
     </div>
   )
 }

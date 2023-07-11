@@ -10,9 +10,9 @@ export const Header = () => {
                 <a href="#"><img className="header__logo" src="../logo/logo.jpeg" alt="logo" /></a>
 
                 <nav className="navbar">
-                    <a className="navbar__link" href="#">Enlace 1</a>
-                    <a className="navbar__link" href="#">Enlace 2</a>
-                    <a className="navbar__link" href="#">Enlace 3</a>
+                    <a className="navbar__link" href="#">Inicio</a>
+                    <a className="navbar__link" href="#">Productos</a>
+                    <a className="navbar__link" href="#">Contacto</a>
                 </nav>
             </div>
         </header>
