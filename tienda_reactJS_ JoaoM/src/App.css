@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/*Palette*/
+/* CSS HEX */
+.colors {
+  --lavender-floral: #A68DDAff;
+--persian-indigo: #3B1B95ff;
+--chrysler-blue: #571DD9ff;
+--rich-black: #03091Fff;
+}
+
 * {
   padding: 0;
   margin: 0;
