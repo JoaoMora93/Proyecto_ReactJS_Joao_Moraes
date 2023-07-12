@@ -9,7 +9,7 @@ const ItemListContainer = ({bienvenida}) => {
             <hr />
             
             <p>{bienvenida}</p>
-            <p>Emprendimiento de sahumadores artesanales y agua florida.</p>
+            <p>Emprendimiento de sahumadores artesanales y más artículos para la renovación de energía.</p>
             
         </div>
     )
