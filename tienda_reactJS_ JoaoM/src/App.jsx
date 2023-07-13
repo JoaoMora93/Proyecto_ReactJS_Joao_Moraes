@@ -1,5 +1,6 @@
 import { Header } from "./components/Header/Header"
 import './App.css'
+import './index.css'
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 
 function App() {

@@ -1,4 +1,5 @@
-import './ItemListConteiner.scss'
+import './ItemListContainer.scss'
+import './ItemListContainer.css'
 
 const PRODUCTOS_VARIOS = [
     {
@@ -66,11 +67,15 @@ const ItemListContainer = ({bienvenida}) => {
 
     return (
         <div>
-            <h2>Inicio</h2>
+            <h2 className='item__title'>Inicio</h2>
             <hr />
             
+            <h1 className="text-3xl font-bold underline">
+                Hello world!
+            </h1>
+
             <p>{bienvenida}</p>
-            <p>Emprendimiento de sahumadores artesanales y más artículos para la renovación de energía.</p>
+            <p className='font-sans hover:font-serif'>Emprendimiento de sahumadores artesanales y más artículos para la renovación de energía.</p>
             
         </div>
     )

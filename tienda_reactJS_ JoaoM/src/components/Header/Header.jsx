@@ -1,5 +1,5 @@
 import './Header.scss'
-
+import './Header.css'
 
 
 export const Header = () => {
@@ -14,6 +14,7 @@ export const Header = () => {
                     <a className="navbar__link" href="#">Productos</a>
                     <a className="navbar__link" href="#">Contacto</a>
                 </nav>
+
             </div>
         </header>
     )
