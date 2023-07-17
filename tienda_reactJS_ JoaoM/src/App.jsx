@@ -2,15 +2,21 @@ import { Header } from "./components/Header/Header"
 import './App.css'
 import './index.css'
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 function App() {
 
 
   return (
-    <div>
+    <BrowserRouter>
       <Header />
-      <ItemListContainer bienvenida={"Bienvenidos/as a Amaris"}/>
-    </div>
+
+      <Routes>
+        <Route path="/" element={ <ItemListContainer /> }/>
+        
+      </Routes>
+      
+    </BrowserRouter>
   )
 }
 
