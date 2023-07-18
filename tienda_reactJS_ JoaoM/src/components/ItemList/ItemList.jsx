@@ -13,11 +13,14 @@ const ItemList = ({productos}) => {
                 Los más buscados
             </h2>
 
-            <div> 
-                {
-                    productos.map((prod) => <ItemCard key={prod.id}  item={prod} />)
-                }
-            </div>
+            <section className="galeria">
+                <div className="galeria__item"> 
+                    {
+                        productos.map((prod) => <ItemCard key={prod.id}  item={prod} />)
+                    }
+                </div>
+            </section>
+            
         </div>
     )
 }

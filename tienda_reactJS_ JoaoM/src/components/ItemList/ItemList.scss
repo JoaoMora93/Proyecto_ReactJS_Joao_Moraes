@@ -4,8 +4,19 @@
 }
 
 .item__title {
-    background: linear-gradient(#03091Fff, #A68DDAff);
+    background: linear-gradient(#03091Fff, rgb(190, 167, 241));
     color: white;
     padding-left: 10px;
 }
-    
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(3, 450px);
+
+    .galeria__item{
+        padding: 10px;
+    }
+}
+
+

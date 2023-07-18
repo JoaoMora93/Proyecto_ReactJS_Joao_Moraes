@@ -5,11 +5,23 @@ const ItemCard = ({item}) => {
 
     return (
         <div className="Item__Card">
-            <h4 className="Item__title px-5">{item.nombre}</h4>
-            <img className="Item__img px-5" src={item.img} alt={item.nombre} />
-            <p className="Item__description px-5">{item.descripcion}</p>
-            <p className="Item__price px-5">Precio: {item.precio}</p>
-            <button className="px-5">Ver más</button>
+            <div className="Item__img">
+                <img src={item.img} alt={item.nombre} />
+            </div>
+
+            <div className='Item__text'>
+            <h3>{item.nombre}</h3>
+            <p>{item.descripcion}</p>
+            </div>
+
+            <div className="Item__price">
+                <p >Precio: {item.precio}</p>
+            </div>
+
+            <div className="Item__btn">
+                <button>Ver más</button>     
+            </div>
+
         </div>
     )
 }

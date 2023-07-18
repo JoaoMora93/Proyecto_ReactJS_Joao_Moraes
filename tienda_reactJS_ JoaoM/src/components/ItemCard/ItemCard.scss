@@ -1,15 +1,63 @@
 
 
 .Item__Card{
-    
-
-    .Item__title{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 20px;
-    }
+    display: grid;
+    width: 300px;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 100px 80px 30px;
+    grid-template-areas: "image" "texto" "price" "btn";
+    border-radius: 18px;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba($color: #000000, $alpha: 0.9);
+    font-family: roboto;
+    text-align: center;
 
     .Item__img{
-        width: 300px;
-        height: 300px;
+        grid-area: image;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background-size: cover;
+
+        img{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    .Item__text{
+        grid-area: texto;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: pink;
+
+        h3 {
+            margin-top: 0px;
+            font-size: 28px;
+        }
+
+        p {
+            color: white;
+            font-size: 15;
+            font-weight: 300;
+        }
+    }
+
+
+    .Item__price{
+        grid-area: price;
+        background: yellow;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        padding: 10px;
+    }
+    
+    .Item__btn{
+        grid-area: btn;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: blue;
+        color: white;
     }
 }
