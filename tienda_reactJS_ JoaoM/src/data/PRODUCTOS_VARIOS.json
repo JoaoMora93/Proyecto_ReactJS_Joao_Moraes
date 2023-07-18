@@ -1,42 +1,42 @@
 [
     {
         "id": 1,
-        "nombre": "Producto 1",
+        "nombre": "Combo 1",
         "descripcion": "Lorem ipsum...",
         "precio": 250,
         "img": "../images/_productos/producto-1.jpeg"
     },
     {
         "id": 2,
-        "nombre": "Producto 2",
+        "nombre": "Combo 2",
         "descripcion": "Lorem ipsum...",
         "precio": 250,
         "img": "../images/_productos/producto-2.jpeg"
     },
     {
         "id": 3,
-        "nombre": "Producto 3",
+        "nombre": "Aguaflorida",
         "descripcion": "Lorem ipsum...",
         "precio": 250,
         "img": "../images/_productos/producto-3.jpeg"
     },
     {
         "id": 4,
-        "nombre": "Producto 4",
+        "nombre": "Sahumador Lavanda",
         "descripcion": "Lorem ipsum...",
         "precio": 250,
         "img": "../images/_productos/producto-4.jpeg"
     },
     {
         "id": 5,
-        "nombre": "Producto 5",
+        "nombre": "Sahumador Naranja",
         "descripcion": "Lorem ipsum...",
         "precio": 250,
         "img": "../images/_productos/producto-5.jpeg"
     },
     {
         "id": 6,
-        "nombre": "Producto 6",
+        "nombre": "Combo 3",
         "descripcion": "Lorem ipsum...",
         "precio": 250,
         "img": "../images/_productos/producto-6.jpeg"
