@@ -4,41 +4,47 @@
         "nombre": "Combo 1",
         "descripcion": "Lorem ipsum...",
         "precio": 250,
-        "img": "../images/_productos/producto-1.jpeg"
+        "img": "../images/_productos/producto-1.jpeg",
+        "caregoria": "Combo Sahumador"
     },
     {
         "id": 2,
         "nombre": "Combo 2",
         "descripcion": "Lorem ipsum...",
         "precio": 250,
-        "img": "../images/_productos/producto-2.jpeg"
+        "img": "../images/_productos/producto-2.jpeg",
+        "caregoria": "Combo Sahumador"
     },
     {
         "id": 3,
         "nombre": "Aguaflorida",
         "descripcion": "Lorem ipsum...",
         "precio": 250,
-        "img": "../images/_productos/producto-3.jpeg"
+        "img": "../images/_productos/producto-3.jpeg",
+        "caregoria": "Aguaflorida"
     },
     {
         "id": 4,
         "nombre": "Sahumador Lavanda",
         "descripcion": "Lorem ipsum...",
         "precio": 250,
-        "img": "../images/_productos/producto-4.jpeg"
+        "img": "../images/_productos/producto-4.jpeg",
+        "caregoria": "Sahumadores"
     },
     {
         "id": 5,
         "nombre": "Sahumador Naranja",
         "descripcion": "Lorem ipsum...",
         "precio": 250,
-        "img": "../images/_productos/producto-5.jpeg"
+        "img": "../images/_productos/producto-5.jpeg",
+        "caregoria": "Sahumadores"
     },
     {
         "id": 6,
         "nombre": "Combo 3",
         "descripcion": "Lorem ipsum...",
         "precio": 250,
-        "img": "../images/_productos/producto-6.jpeg"
+        "img": "../images/_productos/producto-6.jpeg",
+        "caregoria": "Combo Sahumador"
     }
 ]

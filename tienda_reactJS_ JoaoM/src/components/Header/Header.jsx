@@ -1,5 +1,6 @@
 import './Header.scss'
 import './Header.css'
+import { Link } from 'react-router-dom'
 
 
 export const Header = () => {
@@ -7,12 +8,12 @@ export const Header = () => {
     return (
         <header className="header">
             <div className="header__container">
-                <a className='hover:outline-none hover:ring-2 hover:ring-purple-600 hover:ring-offset-2 hover:shadow-xl' href="#"><img className="header__logo" src="../logo/_navbar_logo.jpeg" alt="logo" /></a>
+                <Link className='hover:outline-none hover:ring-2 hover:ring-purple-600 hover:shadow-xl' to="/"><img className="header__logo" src="../logo/_navbar_logo.jpeg" alt="logo" /></Link>
 
                 <nav className="navbar">
-                    <a className="navbar__link hover:bg-violet-400" href="#">Inicio</a>
-                    <a className="navbar__link hover:bg-violet-400" href="#">Productos</a>
-                    <a className="navbar__link hover:bg-violet-400" href="#">Contacto</a>
+                    <Link className="navbar__link hover:bg-violet-400" to="/">Inicio</Link>
+                    <Link className="navbar__link hover:bg-violet-400" to="/">Productos</Link>
+                    <Link className="navbar__link hover:bg-violet-400" to="#">Contacto</Link>
                 </nav>
 
             </div>

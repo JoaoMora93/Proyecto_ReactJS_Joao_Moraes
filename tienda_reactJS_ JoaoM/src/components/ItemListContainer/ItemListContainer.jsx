@@ -3,10 +3,12 @@ import './ItemListContainer.css'
 import { useEffect, useState } from 'react'
 import { pedirDatos } from '../../Helpers/pedirDatos'
 import ItemList from '../ItemList/ItemList'
+import { useParams } from 'react-router-dom'
 
 const ItemListContainer = () => {
     const [productos, setProductos] = useState([])
-    console.log(productos)
+
+    const { categoryId } = useParams()
 
     useEffect(() => {
         pedirDatos()

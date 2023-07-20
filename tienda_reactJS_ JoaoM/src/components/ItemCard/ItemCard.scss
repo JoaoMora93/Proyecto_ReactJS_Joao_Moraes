@@ -12,9 +12,9 @@
     text-align: center;
 
     &:hover {
-        transform: scale(1.05);
+        transform: scale(1.01);
         transition: all 0.2s ease-out;
-        box-shadow: 5px 5px 15px rgba($color: #000000, $alpha: 0.6);
+        box-shadow: 10px 10px 20px rgba($color: #000000, $alpha: 0.6);
     }
 
     .Item__img{
@@ -22,7 +22,7 @@
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         background-size: cover;
-
+        
         img{
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
@@ -67,5 +67,11 @@
         border-bottom-right-radius: 15px;
         background-color: #03091Fff;
         color: white;
+
+        // &:hover{
+        //     transition: margin-right 2s, color 1s;
+        //     color: #03091Fff;
+        //     background-color: white;
+        // }
     }
 }
