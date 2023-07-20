@@ -8,24 +8,27 @@ import ItemDetail from "../ItemDetail/ItemDetail"
 
 const ItemDetailContainer = () => {
     const [item, setItem] = useState(null)
+    const [loading, setLoading] = useState(true)
 
     const { itemId } = useParams()
 
-    console.log(itemId)
-    console.log(item)
 
     useEffect(() => {
+        setLoading(true)
 
         pedirDatos()
         .then(res => {
             setItem( res.find(prod => prod.id === Number(itemId) ))
         })
+        .finally(() => setLoading(false))
     }, [])
 
     return (
         <div>
             {
-                <ItemDetail item={item}/>
+                loading
+                    ? <h2>Cargando</h2>
+                    :<ItemDetail item={item}/>
             }
         </div>
     )
