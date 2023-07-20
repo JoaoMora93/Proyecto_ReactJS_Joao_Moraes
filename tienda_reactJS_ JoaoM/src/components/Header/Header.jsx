@@ -12,7 +12,10 @@ export const Header = () => {
 
                 <nav className="navbar">
                     <Link className="navbar__link hover:bg-violet-400" to="/">Inicio</Link>
-                    <Link className="navbar__link hover:bg-violet-400" to="/">Productos</Link>
+                    <Link className="navbar__link hover:bg-violet-400" to="/productos">Productos</Link>
+                    <Link className="navbar__link hover:bg-violet-400" to="/productos/combo_sahumador">Combos</Link>
+                    <Link className="navbar__link hover:bg-violet-400" to="/productos/sahumadores">Sahumadores</Link>
+                    <Link className="navbar__link hover:bg-violet-400" to="/productos/aguaflorida">Aguaflorida</Link>
                     <Link className="navbar__link hover:bg-violet-400" to="#">Contacto</Link>
                 </nav>
 

@@ -13,7 +13,11 @@ const ItemListContainer = () => {
     useEffect(() => {
         pedirDatos()
             .then((res) => {
-                setProductos(res)
+                if (categoryId) {
+                    setProductos(res.filter(prod => prod.categoria === categoryId))
+                } else {
+                    setProductos(res)
+                }
             })
             .catch((error) => {
                 console.log(error)

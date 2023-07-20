@@ -2,49 +2,49 @@
     {
         "id": 1,
         "nombre": "Combo 1",
-        "descripcion": "Lorem ipsum...",
+        "descripcion": "Combo de sahumador, llavero, carbones y aguaflorida.",
         "precio": 250,
         "img": "../images/_productos/producto-1.jpeg",
-        "caregoria": "Combo Sahumador"
+        "categoria": "combo_sahumador"
     },
     {
         "id": 2,
         "nombre": "Combo 2",
-        "descripcion": "Lorem ipsum...",
+        "descripcion": "Combo de sahumador, llavero, carbones y aguaflorida.",
         "precio": 250,
         "img": "../images/_productos/producto-2.jpeg",
-        "caregoria": "Combo Sahumador"
+        "categoria": "combo_sahumador"
     },
     {
         "id": 3,
         "nombre": "Aguaflorida",
-        "descripcion": "Lorem ipsum...",
+        "descripcion": "Aguaflorida de delicioso aroma a rosas.",
         "precio": 250,
         "img": "../images/_productos/producto-3.jpeg",
-        "caregoria": "Aguaflorida"
+        "categoria": "aguaflorida"
     },
     {
         "id": 4,
         "nombre": "Sahumador Lavanda",
-        "descripcion": "Lorem ipsum...",
+        "descripcion": "Sahumador de lavanda, especial para la recarga energética mental.",
         "precio": 250,
         "img": "../images/_productos/producto-4.jpeg",
-        "caregoria": "Sahumadores"
+        "categoria": "sahumadores"
     },
     {
         "id": 5,
         "nombre": "Sahumador Naranja",
-        "descripcion": "Lorem ipsum...",
+        "descripcion": "Sahumador de naranja, ideal para limpieza de energías en cuartos y cocina.",
         "precio": 250,
         "img": "../images/_productos/producto-5.jpeg",
-        "caregoria": "Sahumadores"
+        "categoria": "sahumadores"
     },
     {
         "id": 6,
         "nombre": "Combo 3",
-        "descripcion": "Lorem ipsum...",
+        "descripcion": "Combo de sahumador, llavero, carbones y aguaflorida.",
         "precio": 250,
         "img": "../images/_productos/producto-6.jpeg",
-        "caregoria": "Combo Sahumador"
+        "categoria": "combo_sahumador"
     }
 ]
