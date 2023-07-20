@@ -22,7 +22,7 @@ const ItemListContainer = () => {
             .catch((error) => {
                 console.log(error)
             })
-    }, [])
+    }, [categoryId])
         
     return (
         <div className="catalogo__contenedor">
