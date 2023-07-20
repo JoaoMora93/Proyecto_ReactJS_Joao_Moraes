@@ -1,4 +1,5 @@
 import './ItemCard.scss'
+import { Link } from 'react-router-dom'
 
 
 const ItemCard = ({item}) => {
@@ -19,7 +20,7 @@ const ItemCard = ({item}) => {
                 </div>
 
                 <div className="Item__btn">
-                    <button>Ver más</button>     
+                    <Link to={`/detail/${item.id}`}>Ver más</Link>     
                 </div>
 
             </div>
