@@ -4,9 +4,11 @@
 }
 
 .item__title {
-    background: linear-gradient(#03091Fff, rgb(190, 167, 241));
-    color: white;
+    background: linear-gradient(#03091Fff, #A68DDAff);
+    color: whitesmoke;
     padding-left: 15px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
 .galeria{
@@ -16,6 +18,7 @@
     .galeria__item{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 }
 

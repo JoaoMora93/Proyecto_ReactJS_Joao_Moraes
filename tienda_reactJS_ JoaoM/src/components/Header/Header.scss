@@ -1,5 +1,5 @@
 .header {
-    background: rgba(3, 9, 31, 1);
+    background: #03091Fff;
 
 
     .header__container {
@@ -13,9 +13,13 @@
         .header__logo {
             font-size: 40px;
             font-weight: 700;
-            color: white;
             width: 100px;
             height: auto;
+
+            &:hover {
+                transform: scale(1.03);
+                transition: all 0.2s ease-out;
+            }
         }
 
         .navbar {
@@ -26,10 +30,15 @@
 
             .navbar__link {
                 text-decoration: none;
-                color: white;
+                color: #A68DDAff;
                 font-size: 18px;
                 font-weight: 700;
                 text-transform: uppercase;
+
+                &:hover {
+                    transform: scale(1.03);
+                    transition: all 0.2s ease-out;
+                }
             }
         }
     }

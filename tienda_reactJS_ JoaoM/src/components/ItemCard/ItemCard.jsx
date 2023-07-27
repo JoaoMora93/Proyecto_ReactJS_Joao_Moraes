@@ -7,7 +7,7 @@ const ItemCard = ({item}) => {
     return (
             <div className="Item__Card m-10">
                 <div className="Item__img">
-                    <img className="saturate-150" src={item.img} alt={item.nombre} />
+                    <img className="saturate-90" src={item.img} alt={item.nombre} />
                 </div>
 
                 <div className='Item__text'>
