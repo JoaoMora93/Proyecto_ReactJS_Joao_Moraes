@@ -35,10 +35,10 @@ const ItemListContainer = () => {
         
     return (
         <div className="catalogo__contenedor">
-
-            <h1 className='item__title text-inherit font-bold text-3xl pt-8'>Los más buscados</h1>
+            <h1 className='catalogo__titulo'>Los más buscados</h1>
             <hr />
-            <p className='ms-5 mt-10 mb-0 text-slate-50 font-sans hover:bg-violet-300 px-10'>Emprendimiento de sahumadores artesanales y más artículos para la renovación de energía.</p>
+            <br />
+            <p className='catalogo__parrafo'>Emprendimiento de sahumadores artesanales y más artículos para la renovación de energía.</p>
             {
                 loading
                     ? <h2>Cargando...</h2>

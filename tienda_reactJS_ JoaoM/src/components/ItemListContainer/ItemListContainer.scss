@@ -11,6 +11,21 @@
     border-color: #3B1B95ff;
     border-radius: 30px;
     width: 1200px;
-    justify-content: space-around;
-    align-self: baseline;
+    display: flex-wrap;
+    justify-content: center;
+}
+
+.catalogo__titulo {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.catalogo__parrafo {
+    font-size: large;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
 }
