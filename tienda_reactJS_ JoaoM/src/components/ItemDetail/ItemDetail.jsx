@@ -1,8 +1,11 @@
 import './itemDetail.scss'
 import ItemCount from '../ItemCount/ItemCount'
+import { useState } from 'react'
 
 
 const ItemDetail = ({item}) => {
+
+    const [cantidad, setCantidad] = useState(1)
 
     return(
         <div className="carta__detalle">
@@ -11,8 +14,11 @@ const ItemDetail = ({item}) => {
             <p className='detalle__parrafo'>{item.descripcion}</p>
             <p className='detalle__parrafo'>Precio: ${item.precio}</p>
 
-            <ItemCount />
-            <button className='detalle__btn'>Agregar</button>
+            <ItemCount 
+                max={item.stock}
+                counter={cantidad}
+                setCounter={setCantidad}
+            />
         </div>
     )
 }
