@@ -15,10 +15,12 @@ const ItemCount = ({max, counter, setCounter}) => {
 
     return (
         <div>
-            <button onClick={handleRestar}>-</button>
-            <span>{counter}</span>
-            <button onClick={handleSumar}>+</button>
-            <br />
+            <div className="detalle__cantidad">
+                <button onClick={handleRestar}>-</button>
+                <span>{counter}</span>
+                <button onClick={handleSumar}>+</button>
+            </div>
+
             <button className='detalle__btn'>Agregar</button>
         </div>
     )
