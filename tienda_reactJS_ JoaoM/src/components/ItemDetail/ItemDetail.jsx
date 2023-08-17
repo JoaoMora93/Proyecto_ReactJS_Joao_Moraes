@@ -5,8 +5,10 @@ import { CartContext } from '../../context/CartContext'
 
 
 const ItemDetail = ({item}) => {
-    const { agregarAlCarrito} = useContext(CartContext)
+    const { agregarAlCarrito, isInCart} = useContext(CartContext)
     const [cantidad, setCantidad] = useState(1)
+
+    console.log( isInCart(item.id) )
 
     const handleAgregar = () => {
         const newItem = {
@@ -24,12 +26,17 @@ const ItemDetail = ({item}) => {
             <p className='detalle__parrafo'>{item.descripcion}</p>
             <p className='detalle__parrafo'>Precio: ${item.precio}</p>
 
-            <ItemCount 
-                max={item.stock}
-                counter={cantidad}
-                setCounter={setCantidad}
-                agregar={handleAgregar}
-            />
+            {
+                isInCart(item.id)
+                    ? <Link className="detalle__btn" to="/cart">Terminar mi compra</Link>
+                    : <ItemCount 
+                        max={item.stock}
+                        counter={cantidad}
+                        setCounter={setCantidad}
+                        agregar={handleAgregar}
+                    />
+            }
+            
         </div>
     )
 }
