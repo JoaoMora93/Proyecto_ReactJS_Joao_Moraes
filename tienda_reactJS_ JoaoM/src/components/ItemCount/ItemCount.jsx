@@ -2,7 +2,7 @@ import { useState } from "react"
 
 
 
-const ItemCount = ({max, counter, setCounter}) => {
+const ItemCount = ({max, counter, setCounter, agregar}) => {
 
     const handleRestar = () => {
         counter > 1 && setCounter(counter - 1)
@@ -21,7 +21,7 @@ const ItemCount = ({max, counter, setCounter}) => {
                 <button onClick={handleSumar}>+</button>
             </div>
 
-            <button className='detalle__btn'>Agregar</button>
+            <button onClick={agregar} className='detalle__btn'>Agregar</button>
         </div>
     )
 }

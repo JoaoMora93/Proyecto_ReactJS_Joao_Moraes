@@ -1,11 +1,21 @@
 import './itemDetail.scss'
 import ItemCount from '../ItemCount/ItemCount'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+import { CartContext } from '../../context/CartContext'
 
 
 const ItemDetail = ({item}) => {
-
+    const { agregarAlCarrito} = useContext(CartContext)
     const [cantidad, setCantidad] = useState(1)
+
+    const handleAgregar = () => {
+        const newItem = {
+            ...item,
+            cantidad
+        }
+
+        agregarAlCarrito(newItem)
+    }
 
     return(
         <div className="carta__detalle">
@@ -18,6 +28,7 @@ const ItemDetail = ({item}) => {
                 max={item.stock}
                 counter={cantidad}
                 setCounter={setCantidad}
+                agregar={handleAgregar}
             />
         </div>
     )
