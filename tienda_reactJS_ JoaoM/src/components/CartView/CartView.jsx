@@ -1,11 +1,12 @@
 import { useContext } from "react"
 import { CartContext } from "../../context/CartContext"
+import { FaTrashAlt } from 'react-icons/fa'
 
 
 
 
 const CartView = () => {
-    const { cart, totalCompra } = useContext(CartContext)
+    const { cart, totalCompra, vaciarCarrito, removerDelCarrito } = useContext(CartContext)
     return (
         <div>
             <h2>Tu conmpra</h2>
@@ -18,12 +19,14 @@ const CartView = () => {
                         <img src={item.img} alt={item.nombre} />
                         <p>Precio: ${item.precio * item.cantidad}</p>
                         <p>Cantidad: {item.cantidad}</p>
+                        <button onClick={() => removerDelCarrito(item.id)}><FaTrashAlt/></button>
                         <hr />
                     </div>
                 ))
             }
             <div>
-                <h4>Total: ${totalCompra()}</h4>    
+                <h4>Total: ${totalCompra()}</h4>
+                <button onClick={vaciarCarrito}>Vaciar carrito</button>
             </div>
         </div>
     )
