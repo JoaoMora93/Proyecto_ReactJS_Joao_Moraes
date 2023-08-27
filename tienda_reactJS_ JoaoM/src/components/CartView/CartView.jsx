@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import { CartContext } from "../../context/CartContext"
 import { FaTrashAlt } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 
 
@@ -27,6 +28,7 @@ const CartView = () => {
             <div>
                 <h4>Total: ${totalCompra()}</h4>
                 <button onClick={vaciarCarrito}>Vaciar carrito</button>
+                <Link to="/checkout">Terminar compra</Link>
             </div>
         </div>
     )
