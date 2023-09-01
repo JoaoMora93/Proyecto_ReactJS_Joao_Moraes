@@ -1,6 +1,6 @@
 import { useContext, useState } from "react"
 import { CartContext } from "../../context/CartContext"
-import { collection, addDoc } from "firebase/firestore"
+import { collection, getDocs, addDoc, updateDoc, doc, getDoc, documentId, writeBatch, query, where } from "firebase/firestore"
 import { db } from "../../firebase/config"
 import { Link } from 'react-router-dom'
 
@@ -23,7 +23,7 @@ const Checkout = () => {
         })
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
         // validaciones del formulario
         // if (!validaciones) return
@@ -36,15 +36,41 @@ const Checkout = () => {
         }
 
         console.log(orden)
-        // enviarlo a firebase
-        const ordersRef = collection(db, "orders")
+        
+        const batch = writeBatch(db)
+        const productosRef = collection(db, "productos")
+        const q = query(productosRef, where( documentId(), "in", cart.map(item => item.id)))
+        
+        const productos = await getDocs(q)
+        const outOfStock = []
 
-        addDoc(ordersRef, orden)
-            .then((doc) => {
-                console.log(doc.id)
-                vaciarCarrito()
-                setOrderId(doc.id)
-            })
+        productos.docs.forEach((doc) => {
+            const item = cart.find(prod => prod.id === doc.id )
+            const stock = doc.data().stock
+
+            if (stock >= item.cantidad) {
+                batch.update(doc.ref, {
+                    stock: stock - item.cantidad
+                })
+            } else {
+                outOfStock.push(item)
+            }
+        })
+
+        if (outOfStock.length === 0) {
+            batch.commit()
+        } else {
+            alert("Hay productos sin stock")
+        }
+        // // enviarlo a firebase
+        // const ordersRef = collection(db, "orders")
+
+        // addDoc(ordersRef, orden)
+        //     .then((doc) => {
+        //         console.log(doc.id)
+        //         vaciarCarrito()
+        //         setOrderId(doc.id)
+        //     })
     }
 
     if (orderId) {
